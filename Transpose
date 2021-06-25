@@ -11,7 +11,7 @@ Private Sub CommandButton1_Click()
   Worksheets("Sheet1").Range("A1:B5").Select
   Selection.Delete shift:=xlUp
   
-  Worksheets("Sheet2").Range("A1").Select
+  Worksheets("Sheet1").Range("A1").Select
   Application.CutCopyMode:=False
   Next
   
