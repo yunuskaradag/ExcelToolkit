@@ -9,7 +9,7 @@ Private Sub CommandButton1_Click()
   
   Selection.PasteSpecial Paste:=xlPasteValues, Transpose:=True
   Worksheets("Sheet1").Range("A1:B5").Select
-  Selection.Delete shift=xlUp
+  Selection.Delete shift:=xlUp
   
   Worksheets("Sheet2").Range("A1").Select
   Application.CutCopyMode:=False
