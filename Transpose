@@ -1,0 +1,18 @@
+Private Sub CommandButton1_Click()
+  For i=1 To 6
+  Worksheets("Sheet1").Range("B1:B5").Select
+  Selection.Copy
+  
+  lastrow=Worksheets("Sheet1").Cells(Rows.Count,5).End(xlUp).Row
+  
+  Worksheets("Sheet1").Cells(lastrow+1,5).Select
+  
+  Selection.PasteSpecial Paste:=xlPasteValues, Transpose:=True
+  Worksheets("Sheet1").Range("A1:B5").Select
+  Selection.Delete shift=xlUp
+  
+  Worksheets("Sheet2").Range("A1").Select
+  Application.CutCopyMode=False
+  Next
+  
+ End Sub
