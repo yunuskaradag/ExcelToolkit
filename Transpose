@@ -12,7 +12,7 @@ Private Sub CommandButton1_Click()
   Selection.Delete shift=xlUp
   
   Worksheets("Sheet2").Range("A1").Select
-  Application.CutCopyMode=False
+  Application.CutCopyMode:=False
   Next
   
  End Sub
