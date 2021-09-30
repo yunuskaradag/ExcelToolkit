@@ -1,0 +1,26 @@
+Sub Email_From_Excel_Basic()
+
+Dim emailApplication As Object
+Dim emailItem As Object
+
+Set emailApplication = CreateObject("Outlook.Application")
+Set emailItem = emailApplication.CreateItem(0)
+
+' Now we build the email.
+
+emailItem.To = "*** Email address is removed for privacy ***"
+
+emailItem.Subject = "Subject line for the email."
+
+emailItem.Body = "The message for the email."
+
+' Send the Email
+' Use this OR .Display, but not both together.
+emailItem.Send
+
+' Display the Email so the user can change it as desired before sending it
+' Use this OR .Send, but not both together.
+'emailItem.Display
+
+Set emailItme = Nothing
+Set emailApplication = Nothing
