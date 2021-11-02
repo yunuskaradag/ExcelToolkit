@@ -1,0 +1,1 @@
+=RIGHT(B2;LEN(B2)-FIND(" ";B2))
