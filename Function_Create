@@ -1,0 +1,23 @@
+Function Money_range(selectedcell As Range)
+
+Money = selectedcell ---date(selectedcell)
+
+
+If Money = "0" Then
+   Money_range = "0"
+
+ElseIf Money > 0 And Money < 100 Then
+   Money_range = "0-100"
+
+Else
+   Money_range = "100+"
+
+End If
+
+
+End Function
+
+----fonksiyonu aktif etmek
+macroya bunu yaz exeli xlam olarak kaydet 
+
+sonra herhangi bir exeli açıp file--> option-->Add-in--> manage Go de ordan  functionunu etkinleştir.
