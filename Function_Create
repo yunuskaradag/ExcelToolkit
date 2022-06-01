@@ -1,3 +1,5 @@
+----visual studioya gir bu kodu yaz kapat
+
 Function Money_range(selectedcell As Range)
 
 Money = selectedcell ---date(selectedcell)
