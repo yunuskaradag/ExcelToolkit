@@ -1,0 +1,3 @@
+Function GunAdiniAl(tarih As Date) As String
+    GunAdiniAl = Format(tarih, "dddd") ' Tarihin gün adını alın
+End Function
